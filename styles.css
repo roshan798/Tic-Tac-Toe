@@ -7,7 +7,8 @@ body {
   background-color:#333;;
 }
 .main-section {
-  width: fit-content;
+  width: 100%;
+  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -21,13 +22,14 @@ body {
 .btn-wrapper {
   display: flex;
   padding: 1rem;
+  align-items: center;
   flex-direction: column;
 }
 
 .btn {
   text-decoration: none;
   margin: 1rem;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   text-align: center;
   color: #b022db;
   text-shadow: 1px 1px 2px #b818e9;
@@ -46,4 +48,14 @@ body {
 }
 .btn:hover {
   box-shadow: 0 0 10px rgb(133, 235, 133);
+}
+
+@media only screen and (max-width:576px){
+  .btn{
+    width: fit-content;
+    padding: 0.5rem 0.8rem;
+  }
+  .main-section{
+    font-size: 12px;
+  }
 }
