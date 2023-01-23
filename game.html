@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="game-styles.css"/>
+    <script src="https://kit.fontawesome.com/e8fbb55064.js" crossorigin="anonymous"></script>
+    <script src="game-script.js"></script>
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <main>
+        <div class="wrap">
+            <div class="game-board">
+                <button class="box left top" id="1"></button>
+                <button class="box top" id="2"></button>
+                <button class="box top right" id="3"></button>
+                <button class="box left" id="4"></button>
+                <button class="box" id="5"></button>
+                <button class="box right" id="6"></button>
+                <button class="box left bottom" id="7"></button>
+                <button class="box bottom" id="8"></button>
+                <button class="box bottom right" id="9"></button>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="" id="player1">
+                <p class="player-name">PLAYER 1(<span class="user-value">X</span>)</p>
+                <p id="score1">0</p>
+            </div>
+            <div class="" id="player2">
+                <p class="player-name" id="name">
+                    <span>PLAYER 2</span>(<span class="user-value">O</span>)
+                </p>
+                <p id="score2">0</p>
+            </div>
+            <button class="reset-btn" id="reset">Reset</button>
+        </div>
+    </main>
+    <div class="win-card">
+        <p id="greeting-bg">congratulations</p>
+        <p id="winner"></p>
+    </div>
+</body>
+
+</html>
